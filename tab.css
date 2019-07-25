@@ -1,0 +1,63 @@
+/* 找到 style.css 把这部分替换掉 */
+.tab_bar{
+	position: relative;
+	height: 4rem;
+}
+.tab{
+	display:box;
+	display:-webkit-box;
+	display:-moz-box;
+	display:-webkit-flex;
+	display:flex;
+	padding: 0 1rem;
+	height: 4rem;
+	background: #fff;
+	border-bottom: 1px solid #eee;
+	font-size: 1.4rem;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+}
+.tab{
+	position:absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 99;
+}
+@keyframes tabFixed
+{
+	0%   {opacity: 0;}
+	25%  {opacity: 0.5;}
+	50%  {opacity: 0.7;}
+	100% {opacity: 0.9;}
+}
+.tabFixed{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	box-shadow:1px 1px 7px 1px rgba(0, 0, 0, 0.2);
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	animation: tabFixed 1s;
+	-webkit-animation: tabFixed 1s;
+}
+.tab_btn{
+	margin-bottom: -1px;
+	-webkit-box-flex:1;
+	-moz-box-flex:1;
+	width:20%;
+	-webkit-flex:1;
+	flex:1;
+	text-align: center;
+}
+.tab_btn span{
+	display: block;
+	line-height: 4rem;
+}
+.tab .active{
+	border-bottom: 0.2rem solid #f15353;
+	color: #f15353;
+}
