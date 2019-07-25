@@ -97,6 +97,7 @@ public class indexController {
     public String error(){
         int a = 1/0;
         int b = 2/0;
+        int c = 2/0;
         return "list";
     }
 }
