@@ -96,6 +96,7 @@ public class indexController {
     @RequestMapping(value = "/error")
     public String error(){
         int a = 1/0;
+        int b = 2/0;
         return "list";
     }
 }
